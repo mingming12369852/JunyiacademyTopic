@@ -5,12 +5,26 @@
   <meta charset="utf-8">
   <title></title>
   <script>
-    document.getElementById("demo").innerHTML = "Hello JavaScript!";
+    console.log("hello im Linmin");
+
+    var word01 = "abcd";
+    console.log(word01.split("").reverse().join(""));
+    var word02 = "flipped class room is important";
+
+    var word02Arryay = ["flipped","class","room","is","important"];
+    var newword = [];
+    for (var i = 0; i < word02Arryay.length; i++) {
+      var test = word02Arryay[i].split("").reverse().join("");
+      newword.push(test);
+    }
+    console.log(newword);
+
+
   </script>
 </head>
 
 <body>
-
+  <button type="button" name="button" onclick="hello()">按我</button>
 </body>
 
 </html>
